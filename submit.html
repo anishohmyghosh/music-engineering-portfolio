@@ -29,14 +29,11 @@
           </label>
           <label>Category
             <select id="category">
-              <option>DSP</option>
-              <option>Production</option>
-              <option>Machine Learning</option>
-              <option>Hardware</option>
-              <option>Composition</option>
-              <option>Performance</option>
               <option>Research</option>
-              <option>Other</option>
+              <option>Recording</option>
+              <option>Project</option>
+              <option>Capstone</option>
+              <option>Demo</option>
             </select>
           </label>
           <label>Tags (comma separated)
@@ -146,7 +143,7 @@
         var title = fields.title.value.trim() || 'Project Title';
         var studentName = fields.student_name.value.trim() || 'Student Name';
         var studentSlug = fields.student_slug.value.trim() || slugify(studentName) || 'student-name';
-        var category = fields.category.value.trim() || 'DSP';
+        var category = fields.category.value.trim() || 'Project';
         var tags = toTagLines(fields.tags.value);
         var shortBlurb = fields.short_blurb.value.trim() || 'One sentence summary.';
         var thumbnail = fields.thumbnail_image.value.trim() || '/assets/images/projects/your-image.jpg';

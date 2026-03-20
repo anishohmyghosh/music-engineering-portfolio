@@ -13,14 +13,14 @@ student_name: "Jane Smith"
 student_slug: "jane-smith"
 
 # REQUIRED: Choose one category only
-# Options: DSP, Production, Machine Learning, Hardware, Composition, Performance, Research, Other
-category: "DSP"
+# Options: Research, Recording, Project, Capstone, Demo
+category: "Project"
 
 # REQUIRED: Add 2-5 short tags
 tags:
-  - dsp
   - audio
-  - effects
+  - recording
+  - student-work
 
 # REQUIRED: One short sentence for the homepage card
 short_blurb: "A real-time audio effect that cleans noisy recordings."

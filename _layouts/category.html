@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="stack">
-  <p class="meta">Category</p>
+  <p class="meta">Project Type</p>
   <h1>{{ page.category }}</h1>
 </section>
 
@@ -30,11 +30,11 @@ layout: default
   </div>
 
   {% if category_projects == empty %}
-    <p class="meta">No projects in this category yet.</p>
+    <p class="meta">No projects in this project type yet.</p>
   {% endif %}
 
   <p class="meta">
-    <a href="{{ '/categories/' | relative_url }}">← Back to Categories</a>
+    <a href="{{ '/categories/' | relative_url }}">← Back to Project Types</a>
     •
     <a href="{{ '/' | relative_url }}">Home</a>
   </p>

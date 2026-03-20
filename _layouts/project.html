@@ -8,7 +8,7 @@ layout: default
 </section>
 
 <section class="section stack">
-  <article class="card card-featured">
+  <article class="card card-featured project-hero">
     {% if page.thumbnail_image %}
       <a class="card-media" href="{{ page.thumbnail_image | relative_url }}">
         <img src="{{ page.thumbnail_image | relative_url }}" alt="{{ page.title | escape }}">
@@ -23,7 +23,7 @@ layout: default
       <p class="meta">Course: {{ page.course | default: 'Not provided' }}</p>
       <p class="meta">
         {% assign cat_slug = page.category | slugify %}
-        Category:
+        Project Type:
         <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ page.category }}</a>
       </p>
     </div>

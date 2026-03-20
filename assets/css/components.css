@@ -24,16 +24,23 @@ hr {
 }
 
 .card-media {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  min-height: 170px;
+  max-height: 170px;
+  padding: var(--space-2);
   background: var(--color-surface-muted);
 }
 
 .card-media img {
-  width: 100%;
-  height: clamp(150px, 20vw, 180px);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 260ms ease;
 }
 
@@ -88,6 +95,9 @@ hr {
 
 .card-featured {
   border-radius: var(--radius-lg);
+  border-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-border) 70%);
+  box-shadow: 0 12px 26px rgb(16 24 40 / 12%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
 }
 
 .button-row {
@@ -141,6 +151,15 @@ hr {
 
 @media (min-width: 960px) {
   .card-featured .card-media img {
-    height: clamp(160px, 18vw, 200px);
+    max-height: 190px;
+  }
+
+  .project-hero .card-media {
+    min-height: 260px;
+    max-height: 260px;
+  }
+
+  .project-hero .card-media img {
+    max-height: 240px;
   }
 }

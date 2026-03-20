@@ -1,20 +1,16 @@
 ---
 layout: default
-title: Categories
+title: Project Types
 ---
 
-<h1>Categories</h1>
+<h1>Project Types</h1>
 
 <ul>
-{% assign categories = site.projects | map: "category" | uniq %}
-{% for category in categories %}
-  {% assign cat_slug = category | slugify %}
-  <li>
-    <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">
-      {{ category }}
-    </a>
-  </li>
-{% endfor %}
+  <li><a href="{{ '/categories/research/' | relative_url }}">Research</a></li>
+  <li><a href="{{ '/categories/recording/' | relative_url }}">Recording</a></li>
+  <li><a href="{{ '/categories/project/' | relative_url }}">Project</a></li>
+  <li><a href="{{ '/categories/capstone/' | relative_url }}">Capstone</a></li>
+  <li><a href="{{ '/categories/demo/' | relative_url }}">Demo</a></li>
 </ul>
 
 <p><a href="{{ '/' | relative_url }}">← Back to Home</a></p>

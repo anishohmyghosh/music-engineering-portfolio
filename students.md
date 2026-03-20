@@ -7,13 +7,18 @@ permalink: /students/
 <h1>Authors</h1>
 
 <ul>
-{% assign authors = site.authors | sort: "name" %}
-{% for author in authors %}
-  <li>
-    <a href="{{ '/students/' | append: author.slug | append: '/' | relative_url }}">
-      {{ author.name }}
-    </a>
-  </li>
+{% assign sorted_projects = site.projects | sort: "student_name" %}
+{% assign seen_slugs = "|" %}
+{% for project in sorted_projects %}
+  {% assign marker = "|" | append: project.student_slug | append: "|" %}
+  {% unless seen_slugs contains marker %}
+    <li>
+      <a href="{{ '/students/' | append: project.student_slug | append: '/' | relative_url }}">
+        {{ project.student_name }}
+      </a>
+    </li>
+    {% assign seen_slugs = seen_slugs | append: project.student_slug | append: "|" %}
+  {% endunless %}
 {% endfor %}
 </ul>
 
