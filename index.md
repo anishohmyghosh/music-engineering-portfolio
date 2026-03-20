@@ -18,9 +18,9 @@ title: Music Engineering Portfolio
   {{ project.student_name }}
 </a>
       • 
-  <a href="{{ '/categories/' | append: project.category | slugify | append: '/' | relative_url }}">
-    {{ project.category }}
-  </a>
+  <a href="{{ '/categories/' | append: (project.category | slugify) | append: '/' | relative_url }}">
+  {{ project.category }}
+</a>
 </p>
     <p>{{ project.short_blurb }}</p>
   </div>
