@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: MUEatTheU/music-engineering-portfolio
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/images/projects"
+public_folder: "/assets/images/projects"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{year}}-{{student_slug}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Student Name", name: "student_name", widget: "string" }
+      - { label: "Student Slug", name: "student_slug", widget: "string" }
+      - { label: "Course", name: "course", widget: "string" }
+      - { label: "Semester", name: "semester", widget: "select", options: ["Fall", "Spring", "Summer"] }
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Category", name: "category", widget: "select", options: ["DSP", "Audio Software", "Music + AI", "Embedded / Hardware", "Acoustics / Transducers", "Creative Coding", "Research"] }
+      - { label: "Short Blurb", name: "short_blurb", widget: "text" }
+      - { label: "Full Description", name: "full_description", widget: "markdown" }
+      - { label: "Thumbnail Image", name: "thumbnail_image", widget: "image" }
+      - { label: "Repository URL", name: "repo_url", widget: "string", required: false }
+      - { label: "Demo URL", name: "demo_url", widget: "string", required: false }
+      - { label: "Publish Date", name: "publish_date", widget: "datetime" }
