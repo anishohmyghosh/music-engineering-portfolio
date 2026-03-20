@@ -1,2 +1,6 @@
 title: Music Engineering Portfolio
 theme: minima
+
+collections:
+  projects:
+    output: true
