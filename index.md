@@ -3,21 +3,20 @@ layout: default
 title: Music Engineering Portfolio
 ---
 
-# Music Engineering Portfolio
+<h1>Music Engineering Portfolio</h1>
 
-## Latest Projects
-
-<ul>
+<div class="grid">
 {% assign sorted = site.projects | sort: "publish_date" | reverse %}
 {% for project in sorted %}
-  <li>
+  <div class="card">
     <a href="{{ project.url | relative_url }}">
-      <strong>{{ project.title }}</strong>
-    </a><br>
-    {{ project.student_name }} — {{ project.category }}<br>
-    {{ project.short_blurb }}
-  </li>
+      <img src="{{ project.thumbnail_image | relative_url }}" alt="{{ project.title }}">
+      <h3>{{ project.title }}</h3>
+    </a>
+    <p class="meta">
+      {{ project.student_name }} • {{ project.category }}
+    </p>
+    <p>{{ project.short_blurb }}</p>
+  </div>
 {% endfor %}
-</ul>
-
-
+</div>
