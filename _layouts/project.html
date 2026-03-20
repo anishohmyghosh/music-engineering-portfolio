@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+
+    <h1>{{ page.title }}</h1>
+
+    <p><strong>Student:</strong> {{ page.student_name }}</p>
+    <p><strong>Category:</strong> {{ page.category }}</p>
+
+    <p>{{ page.full_description }}</p>
+
+    {% if page.repo_url %}
+      <p><a href="{{ page.repo_url }}">View Repository</a></p>
+    {% endif %}
+
+    <p><a href="/">← Back to Home</a></p>
+
+  </body>
+</html>
