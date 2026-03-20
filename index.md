@@ -10,7 +10,9 @@ title: Music Engineering Portfolio
 <ul>
 {% for project in site.projects %}
   <li>
-    <strong>{{ project.title }}</strong><br>
+    <a href="{{ project.url }}">
+      <strong>{{ project.title }}</strong>
+    </a><br>
     {{ project.student_name }} — {{ project.category }}<br>
     {{ project.short_blurb }}
   </li>
