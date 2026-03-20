@@ -15,7 +15,7 @@ title: Music Engineering Portfolio
     </a>
     <p class="meta">
   {{ project.student_name }} • 
-  <a href="{{ '/categories/' | append: project.category | slugify | relative_url }}">
+  <a href="{{ '/categories/' | append: project.category | slugify | append: '/' | relative_url }}">
     {{ project.category }}
   </a>
 </p>
