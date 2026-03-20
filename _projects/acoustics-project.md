@@ -3,7 +3,7 @@ layout: project
 title: "Test Project 2"
 student_name: "John Smith"
 student_slug: "john-smith"
-category: "Research"
+category: "Project"
 tags:
   - acoustics
   - absorption
