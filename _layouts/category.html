@@ -21,7 +21,7 @@ layout: default
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
         <p class="meta">
-          <a href="{{ '/students/' | append: project.student_slug | append: '/' | relative_url }}">{{ project.student_name }}</a>
+          <a href="{{ '/students/' | append: project.student_slug | relative_url }}">{{ project.student_name }}</a>
         </p>
         <p class="card-description">{{ project.short_blurb }}</p>
       </div>
@@ -34,7 +34,7 @@ layout: default
   {% endif %}
 
   <p class="meta">
-    <a href="{{ '/categories/' | relative_url }}">← Back to Project Types</a>
+    <a href="{{ '/categories' | relative_url }}">← Back to Project Types</a>
     •
     <a href="{{ '/' | relative_url }}">Home</a>
   </p>

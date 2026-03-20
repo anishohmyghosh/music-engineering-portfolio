@@ -18,13 +18,13 @@ layout: default
       <h2 class="card-title">Project Overview</h2>
       <p class="meta">
         Student:
-        <a href="{{ '/students/' | append: page.student_slug | append: '/' | relative_url }}">{{ page.student_name }}</a>
+        <a href="{{ '/students/' | append: page.student_slug | relative_url }}">{{ page.student_name }}</a>
       </p>
       <p class="meta">Course: {{ page.course | default: 'Not provided' }}</p>
       <p class="meta">
         {% assign cat_slug = page.category | slugify %}
         Project Type:
-        <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ page.category }}</a>
+        <a href="{{ '/categories/' | append: cat_slug | relative_url }}">{{ page.category }}</a>
       </p>
     </div>
   </article>

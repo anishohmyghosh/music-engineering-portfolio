@@ -1,6 +1,3 @@
-safe: false
-plugins_dir: _plugins
-
 collections:
   projects:
     output: true

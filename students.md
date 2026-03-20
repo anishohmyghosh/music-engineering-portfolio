@@ -13,7 +13,7 @@ permalink: /students/
   {% assign marker = "|" | append: project.student_slug | append: "|" %}
   {% unless seen_slugs contains marker %}
     <li>
-      <a href="{{ '/students/' | append: project.student_slug | append: '/' | relative_url }}">
+      <a href="{{ '/students/' | append: project.student_slug | relative_url }}">
         {{ project.student_name }}
       </a>
     </li>

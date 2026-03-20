@@ -1,4 +1,5 @@
 ---
 layout: category
 category: Project
+permalink: /categories/project
 ---

@@ -37,11 +37,11 @@ title: Music Engineering Portfolio
             <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
           </h3>
           <p class="meta">
-            <a href="{{ '/students/' | append: project.student_slug | append: '/' | relative_url }}">{{ project.student_name }}</a>
+            <a href="{{ '/students/' | append: project.student_slug | relative_url }}">{{ project.student_name }}</a>
             •
             {% assign cat_slug = project.category | slugify %}
             Project Type:
-            <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ project.category }}</a>
+            <a href="{{ '/categories/' | append: cat_slug | relative_url }}">{{ project.category }}</a>
           </p>
           <p class="card-description">{{ project.short_blurb }}</p>
         </div>
@@ -74,11 +74,11 @@ title: Music Engineering Portfolio
             <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
           </h3>
           <p class="meta">
-            <a href="{{ '/students/' | append: project.student_slug | append: '/' | relative_url }}">{{ project.student_name }}</a>
+            <a href="{{ '/students/' | append: project.student_slug | relative_url }}">{{ project.student_name }}</a>
             •
             {% assign cat_slug = project.category | slugify %}
             Project Type:
-            <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ project.category }}</a>
+            <a href="{{ '/categories/' | append: cat_slug | relative_url }}">{{ project.category }}</a>
           </p>
           <p class="card-description">{{ project.short_blurb }}</p>
           {% if project.tags %}
