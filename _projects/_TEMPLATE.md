@@ -35,6 +35,10 @@ course: "MUE410"
 thumbnail_image: "/assets/images/projects/my-awesome-audio-project.jpg"
 
 # REQUIRED: Full project description for the detail page
+# You can include images in Markdown after uploading them to assets/images/projects/
+# Example:
+# full_description: "This project builds a real-time denoiser. Here is the interface:
+# ![Plugin UI](/assets/images/projects/my-plugin-ui.png)"
 full_description: "This project builds a real-time denoiser using spectral gating and adaptive thresholding. It was designed for speech and vocal takes in untreated rooms."
 
 # REQUIRED: Repository link (must work)
@@ -42,9 +46,6 @@ repo_url: "https://github.com/your-username/my-awesome-audio-project"
 
 # OPTIONAL: Demo link (video, live demo, audio demo)
 demo_url: "https://youtu.be/your-demo-video"
-
-# REQUIRED: Leave false unless an instructor asks to feature it
-featured: false
 
 # REQUIRED: Date for sorting on homepage (YYYY-MM-DD)
 publish_date: 2026-03-20
