@@ -14,7 +14,7 @@ tags:
   - algorithm
 course: "Design with AI"
 short_blurb: "Music recommendation algorithm and interface using machine learning and AI approaches."
-thumbnail_image: "https://github.com/anishohmyghosh/audiorium/blob/main/assets/cover.png"
+thumbnail_image: "https://github.com/anishohmyghosh/music-engineering-portfolio/blob/main/assets/images/projects/cover.png"
 full_description: "# Audiorium
 ### Cultivating Diversity in Music Recommendation with Latent Representations of Audio
 
@@ -93,7 +93,7 @@ Additional design decisions:
 
 ## System Architecture
 
-![Audiorium System Flow](assets/images/projects/audioriumflow.png)
+![Audiorium System Flow](/assets/images/projects/audioriumflow.png)
 
 The system runs two parallel pipelines:
 
@@ -136,11 +136,11 @@ The GUI is a hybrid of a **text-bar interface** (like ChatGPT) and a **standard 
 
 | Search | Results | Artists |
 |:---:|:---:|:---:|
-| ![Search home](assets/images/projects/audiorium_search_1.png) | ![Search results](assets/images/projects/audiorium_search_2.png) | ![Artists](assets/images/projects/audiorium_search_3.png) |
+| ![Search home](/assets/images/projects/audiorium_search_1.png) | ![Search results](/assets/images/projects/audiorium_search_2.png) | ![Artists](/assets/images/projects/audiorium_search_3.png) |
 
 | Explore | Library |
 |:---:|:---:|
-| ![Explore](assets/images/projects/audiorium_explore.png) | ![Library](assets/images/projects/audiorium_library.png) |
+| ![Explore](/assets/images/projects/audiorium_explore.png) | ![Library](/assets/images/projects/audiorium_library.png) |
 
 ---
 
@@ -162,7 +162,7 @@ The GUI is a hybrid of a **text-bar interface** (like ChatGPT) and a **standard 
 
 ### Methodology
 
-![Evaluation Design](assets/images/projects/audieval.png)
+![Evaluation Design](/assets/images/projects/audieval.png)
 
 Recommendations were collected from Audiorium, Spotify, and Apple Music, then evaluated across two dimensions — algorithmic (1,000 songs) and via user study (10 songs).
 
@@ -233,20 +233,6 @@ recommend_by_text(\"aggressive 808 trap with dark strings\")
 
 # Audio-to-audio similarity
 recommend_by_audio(\"mp3dataset/Plain.mp3\")
-```
-
-### Project Structure
-
-```
-Audiorium/
-├── assets/
-│   ├── audioriumflow.png     # System architecture diagram
-│   ├── audieval.png          # Evaluation methodology diagram
-│   └── poster.pdf            # Academic poster (University of Miami, 2026)
-├── mp3dataset/               # Local audio library (gitignored)
-├── audiorium.py              # Core recommendation engine
-├── Audiorium.ipynb           # Original Colab notebook
-└── README.md
 ```
 
 ---
