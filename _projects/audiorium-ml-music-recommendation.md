@@ -15,6 +15,10 @@ tags:
 course: "Design with AI"
 short_blurb: "Music recommendation algorithm and interface using machine learning and AI approaches."
 thumbnail_image: "https://github.com/anishohmyghosh/music-engineering-portfolio/blob/main/assets/images/projects/cover.png"
+repo_url: "https://github.com/anishohmyghosh/audiorium"
+demo_url: "https://youtu.be/gNmN87yJhks"
+publish_date: 2026-04-27
+
 full_description: "# Audiorium
 ### Cultivating Diversity in Music Recommendation with Latent Representations of Audio
 
@@ -246,8 +250,4 @@ recommend_by_audio(\"mp3dataset/Plain.mp3\")
 5. Liu, H. (2024). Learning audio patterns with latent diffusion models and contrastive learning [Doctoral dissertation, University of Surrey].
 6. Schedl, M., Zamani, H., Chen, C. W., Deldjoo, Y., & Elahi, M. (2018). Current challenges and visions in music recommender systems research. *International Journal of Multimedia Information Retrieval*, 7(2), 95–116.
 7. Sturm, B. L. (2014). A simple method to determine if a music information retrieval system is a \"horse.\" *IEEE Transactions on Multimedia*, 16(6), 1636–1644.
-8. Zhu, P., Pang, R., Jiao, Y., & Tang, K. (2023). Text2Track: Text-to-Track generation with high-fidelity and structural consistency. *Proceedings of the 31st ACM International Conference on Multimedia*."
-repo_url: "https://github.com/anishohmyghosh/audiorium"
-demo_url: "https://youtu.be/gNmN87yJhks"
-publish_date: 2026-04-27
----
+8. Zhu, P., Pang, R., Jiao, Y., & Tang, K. (2023). Text2Track: Text-to-Track generation with high-fidelity and structural consistency. *Proceedings of the 31st ACM International Conference on Multimedia*." ---
