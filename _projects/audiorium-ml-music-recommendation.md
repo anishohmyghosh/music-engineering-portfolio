@@ -222,4 +222,5 @@ recommend_by_audio(\"mp3dataset/Plain.mp3\")
 5. Liu, H. (2024). Learning audio patterns with latent diffusion models and contrastive learning [Doctoral dissertation, University of Surrey].
 6. Schedl, M., Zamani, H., Chen, C. W., Deldjoo, Y., & Elahi, M. (2018). Current challenges and visions in music recommender systems research. *International Journal of Multimedia Information Retrieval*, 7(2), 95–116.
 7. Sturm, B. L. (2014). A simple method to determine if a music information retrieval system is a \"horse.\" *IEEE Transactions on Multimedia*, 16(6), 1636–1644.
-8. Zhu, P., Pang, R., Jiao, Y., & Tang, K. (2023). Text2Track: Text-to-Track generation with high-fidelity and structural consistency. *Proceedings of the 31st ACM International Conference on Multimedia*." ---
+8. Zhu, P., Pang, R., Jiao, Y., & Tang, K. (2023). Text2Track: Text-to-Track generation with high-fidelity and structural consistency. *Proceedings of the 31st ACM International Conference on Multimedia*."
+---
